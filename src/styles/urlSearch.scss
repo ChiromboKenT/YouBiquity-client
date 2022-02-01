@@ -1,0 +1,69 @@
+.url {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    &--container {
+      display: flex;
+      margin: 0 auto;
+      width: 50%;
+      display: flex;
+      padding: 3rem 0;
+      padding-bottom: 0.4rem;
+
+      flex-direction: column;
+    }
+  }
+  &-input {
+    flex: 1;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    background-color: #282828;
+    padding: 0.8rem 0.3rem;
+    min-width: 10rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+
+    &:focus {
+      outline-color: rgb(20, 102, 168);
+    }
+  }
+  &-button {
+    flex: 0 0 25%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 1px solid rgba($color-secondary, 0.4);
+    padding: 0.5rem 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $color-dark;
+      background-color: transparent;
+    }
+    &:active {
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+  }
+  &-error {
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.514),
+      1px -1px 0 rgba(0, 0, 0, 0.575), -1px 1px 0 rgba(0, 0, 0, 0.637),
+      1px 1px 0 rgba(0, 0, 0, 0.589);
+    color: red;
+    font-size: 15px;
+    font-weight: 700;
+    width: 50%;
+    padding: 0 0.8rem;
+    margin: 0 auto;
+  }
+}
